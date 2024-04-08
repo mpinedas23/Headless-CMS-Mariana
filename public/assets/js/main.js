@@ -20,7 +20,7 @@ fetch("assets/data/content.json")
     //tableCard
     document.getElementById('tableCardmainTitle').textContent = data.tableCard.mainTitle;
     document.getElementById('tableCardmainSubtitle').textContent = data.tableCard.mainSubtitle;
-    const tableDataRows = document.querySelectorAll('.left-table-data');
+    const tableDataRows = document.querySelectorAll('.tableCardData');
     data.tableCard.tableData.forEach((item, index) => {
       const tableDataRow = tableDataRows[index];
       if (tableDataRow) {
@@ -33,8 +33,43 @@ fetch("assets/data/content.json")
       }
     });
 
-    
-    
+    //left card
+    document.querySelector('#LeftCard .fs-4').textContent = data.leftCard['main-title'];
+    document.querySelector('#LeftCard .text-secondary .table_number').textContent = data.leftCard.subtitle;
 
+    
+    const leftRows = document.querySelectorAll('#LeftCard .leftRow');
+    data.leftCard.items.forEach((item, index) => {
+      const leftRow = leftRows[index];
+      if (leftRow) {
+        leftRow.querySelector('.left-text').textContent = item.title;
+        leftRow.querySelector('.table_number').textContent = item.count;
+      }
+    });
+
+    
+    document.querySelector('#LeftCard .text-primary button').textContent = data.leftCard.detailsButton;
+
+
+    //right card
+  
+    document.querySelector('#RightCard .fs-4').textContent = data.rightCard['main-title'];
+    document.querySelector('#RightCard .text-secondary .table_number').textContent = data.rightCard.subtitle;
+
+    
+    const rightRows = document.querySelectorAll('#RightCard .rightRow');
+    data.leftCard.items.forEach((item, index) => {
+      const leftRow = leftRows[index];
+      if (leftRow) {
+        leftRow.querySelector('.left-text').textContent = item.title;
+        leftRow.querySelector('.table_number').textContent = item.count;
+      }
+    });
+
+    
+    document.querySelector('#LeftCard .text-primary button').textContent = data.leftCard.detailsButton;
   })
+
+  
+  
   .catch(error => console.log('errors:', error));

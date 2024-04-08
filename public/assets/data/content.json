@@ -18,6 +18,8 @@
       "count": 64
     }
   ],
+
+
   "tableCard":{
     "mainTitle": "Today's Trends",
     "mainSubtitle": "As of 25 May 2019, 09:41 PM",
@@ -44,11 +46,51 @@
       "count":"94%"
     }
   ]
-}
+},"leftCard": {
+    "main-title": "Unresolved tickets",
+    "subtitle": "Support",
+    "detailsButton": "View details",
+    "items": [
+      {
+         "title": "Waiting on Feature Request", 
+         "count": "4238" 
+      },
+      {
+         "title": "Awaiting Customer Response", 
+         "count": "1005" 
+      },
+      { 
+        "title": "Awaiting Developer Fix", 
+        "count": "914" 
+      },
+      { 
+        "title": "Pending", 
+        "count": "281"
+      }
+    ]
+  },
 
-
-
-
-
- 
+  "RightCard": {
+    "main-title": "Task",
+    "subtitle": "Today",
+    "detailsButton": "View all",
+    "items": [
+      {
+         "title": "Create new task", 
+         "count": "+" 
+      },
+      {
+         "title": "Finish ticket update", 
+         "count": "URGENT" 
+      },
+      { 
+        "title": "Create new ticket example", 
+        "count": "NEW" 
+      },
+      { 
+        "title": "Update ticket report", 
+        "count": "default"
+      }
+    ]
+  }
 }
