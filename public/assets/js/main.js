@@ -51,24 +51,41 @@ fetch("assets/data/content.json")
     document.querySelector('#LeftCard .text-primary button').textContent = data.leftCard.detailsButton;
 
 
-    //right card
-  
-    document.querySelector('#RightCard .fs-4').textContent = data.rightCard['main-title'];
-    document.querySelector('#RightCard .text-secondary .table_number').textContent = data.rightCard.subtitle;
-
-    
-    const rightRows = document.querySelectorAll('#RightCard .rightRow');
-    data.leftCard.items.forEach((item, index) => {
-      const leftRow = leftRows[index];
-      if (leftRow) {
-        leftRow.querySelector('.left-text').textContent = item.title;
-        leftRow.querySelector('.table_number').textContent = item.count;
+      // Update the main title
+      const mainTitleElement = document.querySelector('#RightCard .main-title');
+      if (mainTitleElement) {
+        mainTitleElement.textContent = data['RightCard']['main-title'];
       }
-    });
-
-    
-    document.querySelector('#LeftCard .text-primary button').textContent = data.leftCard.detailsButton;
-  })
+  
+      // Update the subtitle
+      const subtitleElement = document.querySelector('#RightCard .table_number');
+      if (subtitleElement) {
+        subtitleElement.textContent = data['RightCard']['subtitle'];
+      }
+  
+      // Loop through each item and update the corresponding row
+      data['RightCard']['items'].forEach((item, index) => {
+        const row = document.querySelectorAll('#RightCard .rightRow')[index]; // Select the row at the current index
+        if (row) {
+          const title = row.querySelector('.right-text'); // Select the title element within the row
+          const count = row.querySelector('.table_number'); // Select the count element within the row
+  
+          // Update the title and count
+          if (title) {
+            title.textContent = item['title'];
+          }
+          if (count) {
+            count.textContent = item['count'];
+          }
+        }
+      });
+  
+      // Update the details button
+      const detailsButtonElement = document.querySelector('#RightCard .text-primary button');
+      if (detailsButtonElement) {
+        detailsButtonElement.textContent = data['RightCard']['detailsButton'];
+      }
+    })
 
   
   
