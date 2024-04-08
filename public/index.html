@@ -167,7 +167,7 @@
                 <div class="col py-3">
 
                     <!-- overview header -->
-                    <header class="header p-3 mb-3">
+                    <header id="overview-header" class="header p-3 mb-3">
                         <div class="container">
                             <div
                                 class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
@@ -215,41 +215,41 @@
                     </header>
                     <!-- end of header -->
 
-                    <!-- data container -->
-                    <div class="data-container data-button  row py-3 px-3">
+                    <!-- data container (small cards) -->
+                    <div id="infoCards" class="data-container data-button  row py-3 px-3">
                         <button type="button" class="card btn btn-outline-secondary col mx-3">
-                            <span class="card-text text-wrap">Unresolved</span>
+                            <span class="card-text text-wrap"></span>
                             <br />
-                            <span class="fs-1 fw-bold" style="font-weight: 700;">60</span>
+                            <span class="fs-1 fw-bold" style="font-weight: 700;"></span>
                         </button>
                         <button type="button" class="blue-card btn btn-outline-primary col mx-3">
-                            <span class="card-text text-wrap">Overdue</span>
+                            <span class="card-text text-wrap"></span>
                             <br />
-                            <span class="fs-1 fw-bold">16</span>
+                            <span class="fs-1 fw-bold"></span>
                         </button>
                         <button type="button" class="card btn btn-outline-secondary col mx-3">
-                            <span class="card-text text-wrap">Open</span>
+                            <span class="card-text text-wrap"></span>
                             <br />
-                            <span class="fs-1 fw-bold">43</span>
+                            <span class="fs-1 fw-bold"></span>
                         </button>
                         <button type="button" class="card btn btn-outline-secondary col mx-3">
-                            <span class="card-text text-wrap">On Hold</span>
+                            <span class="card-text text-wrap"></span>
                             <br />
-                            <span class="fs-1 fw-bold">64</span>
+                            <span class="fs-1 fw-bold"></span>
                         </button>
                     </div>
                     <!-- end of data container-->
 
                     <!--chart -->
-                    <div class="chart-container py-3 px-3">
+                    <div id="tableCard" class="chart-container py-3 px-3">
                         <div class="row">
                             <div class="col-md-6" style="display: flex;">
                                 <div class="row" >
                                     <div class="col-md-12">
                                         <div class="Chart" >
                                             <div class="Chart-header position-absolute top:32px; ">
-                                                <h1 class="number fw-bold" style="font-size: 19px;">Today's Trends</h1>
-                                                <p style="font-size: 12px; color: grey;">As of 25 May 2019, 09:41 PM</p>
+                                                <h1 id="tableCardmainTitle" class="number fw-bold" style="font-size: 19px;"></h1>
+                                                <p id="tableCardmainSubtitle" style="font-size: 12px; color: grey;"></p>
                                             </div>
                                             <div class="Chart-body">
                                                 <div class="Chart-content">
@@ -275,11 +275,11 @@
                             <div class="col-md-6 text-center" style="display: flex; flex-direction: column; justify-content: space-between;">
                                 <div class="row">
                                     <div class="col-md-12">
-                                        <div class="Chart">
+                                        <div class="tableCardData Chart">
                                             <div class="Chart-header">
-                                                <span class="text-wrap" style="color: grey;">Resolved</span>
+                                                <span class="text-wrap" style="color: grey;"></span>
                                                 <br/>
-                                                <span class="number fw-bold">449</span>
+                                                <span class="number fw-bold"></span>
                                             </div>
                                             <div class="Chart-body">
                                                 <div class="Chart-content">
@@ -290,11 +290,11 @@
                                 </div>
                                 <div class="row">
                                     <div class="col-md-12">
-                                        <div class="Chart">
+                                        <div class="tableCardData Chart">
                                             <div class="Chart-header">
-                                                <span class="text-wrap" style="color: grey;">Received</span>
+                                                <span class="text-wrap" style="color: grey;"></span>
                                                 <br />
-                                                <span class="number fw-bold">426</span>
+                                                <span class="number fw-bold"></span>
                                             </div>
                                             <div class="Chart-body">
                                                 <div class="Chart-content">
@@ -305,12 +305,11 @@
                                 </div>
                                 <div class="row">
                                     <div class="col-md-12">
-                                        <div class="Chart">
+                                        <div class="tableCardData Chart">
                                             <div class="Chart-header">
-                                                <span class="text-wrap" style="color: grey;">Average first response
-                                                    time</span>
+                                                <span class="text-wrap" style="color: grey;"></span>
                                                 <br />
-                                                <span class="number fw-bold">33m</span>
+                                                <span class="number fw-bold"></span>
                                             </div>
                                             <div class="Chart-body">
                                                 <div class="Chart-content">
@@ -321,12 +320,11 @@
                                 </div>
                                 <div class="row">
                                     <div class="col-md-12">
-                                        <div class="Chart">
+                                        <div class="tableCardData Chart">
                                             <div class="Chart-header">
-                                                <span class="text-wrap" style="color: grey;">Average response
-                                                    time</span>
+                                                <span class="text-wrap" style="color: grey;"></span>
                                                 <br />
-                                                <span class="number fw-bold">3h 8m</span>
+                                                <span class="number fw-bold"></span>
                                             </div>
                                             <div class="Chart-body">
                                                 <div class="Chart-content">
@@ -336,13 +334,12 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col-md-12">
+                                    <div class="tableCardData col-md-12">
                                         <div class="Chart">
                                             <div class="Chart-header">
-                                                <span class="text-wrap" style="color: grey;">Resolution within
-                                                    SLA</span>
+                                                <span class="text-wrap" style="color: grey;"></span>
                                                 <br />
-                                                <span class="number fw-bold">94%</span>
+                                                <span class="number fw-bold"></span>
                                             </div>
                                         </div>
                                         <div class="Chart-body">
@@ -362,7 +359,7 @@
                     <div class="row">
                         <div class="col-md-6">
                             <!-- Left Table -->
-                            <div class="left-containter container py-2 px-2">
+                            <div id="LeftCard" class="left-containter container py-2 px-2">
                                 <div class="row">
                                     <div class="col-8 p-3"><span class="fs-4 fw-bold" >Unresolved tickets</span></br>
                                         <span class="text-secondary"><span class="table_number fs-6">Group:</span> Support</span>
@@ -454,6 +451,8 @@
                 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
                     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
                     crossorigin="anonymous"></script>
+
+        <script src="assets/js/main.js"></script>
 </body>
 
 </html>
