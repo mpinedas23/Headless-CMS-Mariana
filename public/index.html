@@ -21,7 +21,7 @@
     <div class="container-fluid">
         <div class="row">
             <!-- Sidebar -->
-            <div class="col-md-3 col-xl-2 px-0">
+            <div  id="SideBar" class=" col-md-3 col-xl-2 px-0">
                 <div class="d-flex flex-column align-items-center align-items-md-start custom-sidebar-bg">
                     <div class="p-3 min-vh-100">
                         <div class="dashboard-side-nav display: flex; flex-direction: column; align-items: center; align-items: md-start;">
@@ -43,7 +43,7 @@
                                     </svg>
                                 </div>
                                 <div class="col d-none d-md-block">
-                                    <div class="ms-2">Dashboard Kit</div>
+                                    <div class="sidebar-text"class="ms-2">Dashboard Kit</div>
                                 </div>
                             </div>
                         </div>
@@ -56,7 +56,7 @@
                                         <path d="M15.5232 8.94116H8.54412L13.1921 13.5891C13.3697 13.7667 13.6621 13.7812 13.8447 13.6091C14.9829 12.5367 15.7659 11.0912 15.9956 9.46616C16.035 9.18793 15.8041 8.94116 15.5232 8.94116ZM15.0576 7.03528C14.8153 3.52176 12.0076 0.714119 8.49412 0.471767C8.22589 0.453237 8 0.679413 8 0.948236V7.5294H14.5815C14.8503 7.5294 15.0762 7.30352 15.0576 7.03528ZM6.58824 8.94116V1.96206C6.58824 1.68118 6.34147 1.45029 6.06353 1.48971C2.55853 1.985 -0.120585 5.04705 0.00412089 8.71675C0.132356 12.4856 3.37736 15.5761 7.14794 15.5288C8.6303 15.5103 10 15.0326 11.1262 14.2338C11.3585 14.0691 11.3738 13.727 11.1724 13.5256L6.58824 8.94116Z" fill="#DDE2FF" />
                                     </g>
                                 </svg>
-                                <div>Overview</div>
+                                <div class="sidebar-text"></div>
                             </div>
 
                             <div id="tickets">
@@ -68,7 +68,7 @@
                                             fill="#DDE2FF" />
                                     </svg>
                                     <div class="col d-none d-md-block">
-                                        <div>Tickets</div>
+                                        <div class="sidebar-text"></div>
                                     </div>
                                 </div>
                             </div>
@@ -81,7 +81,7 @@
                                             fill="#DDE2FF" />
                                     </svg>
                                     <div class="col d-none d-md-block">
-                                        <div>Ideas</div>
+                                        <div class="sidebar-text"></div>
                                     </div>
                                 </div>
                             </div>
@@ -94,7 +94,7 @@
                                             fill="#DDE2FF" />
                                     </svg>
                                     <div class="col d-none d-md-block">
-                                        <div>Contacts</div>
+                                        <div class="sidebar-text"></div>
                                     </div>
                                 </div>
                             </div>
@@ -107,7 +107,7 @@
                                             fill="#DDE2FF" />
                                     </svg>
                                     <div class="col d-none d-md-block">
-                                        <div>Agents</div>
+                                        <div class="sidebar-text"></div>
                                     </div>
                                 </div>
                             </div>
@@ -120,7 +120,7 @@
                                             fill="#DDE2FF" />
                                     </svg>
                                     <div class="col d-none d-md-block">
-                                        <div>Articles</div>
+                                        <div class="sidebar-text"></div>
                                     </div>
                                 </div>
                             </div>
@@ -134,7 +134,7 @@
                                                 fill="#9FA2B4" />
                                     </svg>
                                     <div class="col d-none d-md-block">
-                                        <div>Settings</div>
+                                        <div class="sidebar-text"></div>
                                     </div>
                                 </div>
                             </div>
@@ -148,7 +148,7 @@
                                                 fill="#9FA2B4" />
                                     </svg>
                                     <div class="col d-none d-md-block">
-                                        <div>Subscription</div>
+                                        <div class="sidebar-text"></div>
                                     </div>
 
                                 </div>
@@ -174,7 +174,7 @@
 
                                 <ul id="overview-title"
                                     class="nav col-11 col-lg-auto me-lg-auto mb-1 justify-content-center mb-md-0">
-                                    <p>Overview</p>
+                                    <p></p>
                                 </ul>
                                 <div>
                                     <svg id="search" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
@@ -203,7 +203,7 @@
                                     </div>
                                 </div>
                                 <div id="James-Name">
-                                    Jones Ferdinand
+                                
                                 </div>
                                 <div>
                                     <a>
@@ -389,15 +389,15 @@
                         <div class="col-md-6">
                             <!-- Right Table -->
                             <div id="RightCard" class="container py-2 px-2">
-                                <div class="rightRow row">
-                                    <div class="col-8 p-3"><span class="main-title right fs-4 fw-bold"></span></br>
-                                        <span class="table_number fs-6 " style="font-size: 14px; font-weight: 600;"></span> 
+                                <div class="row">
+                                    <div class="col-8 p-3"><span class="main-title right fs-4 fw-bold" id="RightCardMainTitle"></span></br>
+                                        <span id="RightCardSubTitle" class="table_number fs-6 " style="font-size: 14px; font-weight: 600;"></span> 
                                     </div>
                                     <div class="col-2 p-3 text-primary"><button type="button"
-                                            class="btn btn-link btn-sm" style="color: #3751FF; text-decoration:none;"></button></div>
+                                            class="btn btn-link btn-sm" style="color: #3751FF; text-decoration:none;" id="RightCardDetailsButton"></button></div>
                                 </div>
-                                <div class="rightRow row">
-                                    <div class="col-8 p-3"><span class="right-text"></span></div>
+                                <div class="row" >
+                                    <div class="col-8 p-3"><span class="text-secondary" id="RightCardTask1"></span></div>
                                     <div class="col-2 p-3">
                                         <div class="btn-group-toggle" data-toggle="buttons">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -408,37 +408,37 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="rightRow row">
+                                <div class="row" >
                                     <div class="col-8 p-3 ">
                                         <div class="round">
-                                            <input type="checkbox" class="rightRow rounded-checkbox checkbox"
-                                                id="checkbox1" /><label for="checkbox1"></label>
+                                            <input type="checkbox" class="rounded-checkbox checkbox"
+                                                id="checkbox1" /><label  for="checkbox1"></label>
                                         </div>
-                                        <label for="checkbox1" class="label-text" style="font-size: 14px; font-weight: 600;"></label>
+                                        <label for="checkbox1" class="text-secondary label-text" style="font-size: 14px; font-weight: 600;"></label>
                                     </div>
                                     <div class="col-2 p-3"><button type="button"
-                                            class="table_number btn btn-warning btn-sm text-white"></button></div>
+                                            class="table_number btn btn-warning btn-sm text-white" id="RightCardStatus1"></button></div>
                                 </div>
-                                <div class=" row">
-                                    <div class="col-8 p-3">
-                                        <div class="rightRow round">
-                                            <input type="checkbox" class="rounded-checkbox" id="checkbox2" /> <label
-                                                for="checkbox2"></label>
-                                        </div>
-                                        <label for="checkbox2" class="label-text" style="font-size: 14px; font-weight: 600;"></label>
-                                    </div>
-                                    <div class="col-2 p-3"><button type="button"
-                                            class= "table_number btn btn-success btn-sm"></button></div>
-                                </div>
-                                <div class="rightRow row">
+                                <div class=" row" >
                                     <div class="col-8 p-3">
                                         <div class="round">
-                                            <input type="checkbox" class="rounded-checkbox" id="checkbox3" /> <label
-                                                for="checkbox3"></label>
+                                            <input type="checkbox"  id="checkbox2" /> <label
+                                             for="checkbox2"></label>
                                         </div>
-                                        <label for="checkbox3" class="label-text" style="font-size: 14px; font-weight: 600;"></label>
+                                        <label class="text-secondary" for="checkbox2" class="label-text" style="font-size: 14px; font-weight: 600;"></label>
                                     </div>
                                     <div class="col-2 p-3"><button type="button"
+                                            class= "table_number btn btn-success btn-sm" id="RightCardStatus2"></button></div>
+                                </div>
+                                <div class="row" id="RightCardRow3">
+                                    <div class="col-8 p-3">
+                                        <div class="round">
+                                            <input type="checkbox"  id="checkbox3" /> <label
+                                                for="checkbox3" id="RightCardTask3"></label>
+                                        </div>
+                                        <label id="RightCardRow3" for="checkbox3" class="text-secondary label-text" style="font-size: 14px; font-weight: 600;"></label>
+                                    </div>
+                                    <div class="col-2 p-3"><button id="RightTableStatus3" type="button"
                                             class="table_number btn btn-light btn-sm" style="font-size: 11px; font-weight: 700; text-align: center; color: #9FA2B4;"></button></div>
                                 </div>
                             </div>

@@ -1,4 +1,45 @@
 {
+  "sidebar":[
+  
+  {
+    
+    "text": "Overview"
+  },
+  {
+    
+    "text": "Tickets"
+  },
+  {
+    
+    "text": "Ideas"
+  },
+  {
+    
+    "text": "Contacts"
+  },
+  {
+    
+    "text": "Agents"
+  },
+  {
+   
+    "text": "Articles"
+  },
+  {
+    
+    "text": "Settings"
+  },
+  {
+    "id": "subscription",
+    "icon": "subscription icon",
+    "text": "Subscription"
+  }
+],
+
+  "header": {
+    "overviewTitle": "Overview",
+    "profileName": "Jones Ferdinand"
+  },
 
   "infoCards": [
     {
@@ -46,7 +87,9 @@
       "count":"94%"
     }
   ]
-},"leftCard": {
+},
+
+"leftCard": {
     "main-title": "Unresolved tickets",
     "subtitle": "Support",
     "detailsButton": "View details",
@@ -70,26 +113,26 @@
     ]
   },
 
-  "RightCard": {
-    "main-title": "Task",
-    "subtitle": "Today",
+  "rightCard": {
+    "mainTitle": "Task",
+    "subTitle": "Today",
     "detailsButton": "View all",
     "items": [
       {
-         "title": "Create new task", 
-         "count": "+" 
+        "task": "Create new task",
+        "status": "URGENT"
       },
       {
-         "title": "Finish ticket update", 
-         "count": "URGENT" 
+        "task": "Finish ticket update",
+        "status": "NEW"
       },
-      { 
-        "title": "Create new ticket example", 
-        "count": "NEW" 
+      {
+        "task": "Create new ticket example",
+        "status": "DEFAULT"
       },
-      { 
-        "title": "Update ticket report", 
-        "count": "default"
+      {
+        "task": "Update ticket report",
+        "status": "DEFAULT"
       }
     ]
   }
