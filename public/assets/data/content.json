@@ -1,34 +1,27 @@
 {
   "sidebar":[
-  
-  {
-    
-    "text": "Overview"
-  },
-  {
-    
-    "text": "Tickets"
-  },
-  {
-    
-    "text": "Ideas"
-  },
-  {
-    
-    "text": "Contacts"
-  },
-  {
-    
-    "text": "Agents"
-  },
-  {
    
-    "text": "Articles"
-  },
-  {
-    
-    "text": "Settings"
-  },
+    {
+      "text": "Overview"
+    },
+    {
+      "text": "Tickets"
+    },
+    {
+      "text": "Ideas"
+    },
+    {
+      "text": "Contacts"
+    },
+    {
+      "text": "Agents"
+    },
+    {
+      "text": "Articles"
+    },
+    {
+      "text": "Settings"
+    },
   {
     "id": "subscription",
     "icon": "subscription icon",

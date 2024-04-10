@@ -7,9 +7,10 @@ fetch("assets/data/content.json")
     
     const sidebarItems = document.querySelectorAll('.items-sidebar');
     data.sidebar.forEach((item, index) => {
-      const sidebarText = sidebarItems[index].querySelector('.sidebar-text');
+      const sidebarText = sidebarItems[index].querySelector('.sidebar-text'); //.sidebar-text refers to the class applied to the items in my html, it is targeting all elements with it inside my sidebar.
+      
       if (sidebarText) {
-        sidebarText.textContent = item.text;
+        sidebarText.textContent = item.text; //(item.text) refers to the content inside the json file
       } 
     });
 
